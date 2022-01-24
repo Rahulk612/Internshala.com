@@ -11,11 +11,11 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/css/resumePage.css">
     <!-- <link rel="stylesheet" href="css/resumePage.css"> -->
     <link rel="stylesheet" href="/css/navBar.css">
     <link rel="stylesheet" href="/css/afterLogin.css">
-    
+    <!-- <link rel="stylesheet" href="/css/loginPage.css"> -->
+    <link rel="stylesheet" href="/css/resumePage.css">
     <link rel="stylesheet" href="/css/footer.css">
     <!-- <style>
 
@@ -80,6 +80,7 @@
       </form>
       
     <div id="rfooter"></div>
+    <div id="login-page"></div>
   </body>
 </html>
 
@@ -311,6 +312,8 @@
   
 
 
+    if (all!==null){
+      console.log("asd")
     let initial = all.first_name;
 
     document.getElementById("userInitial").innerHTML = initial[0].toUpperCase();
@@ -387,13 +390,6 @@
         }
     })
 
-    document.getElementById("logoutEvent").addEventListener("click",function(){
-        window.location.href = "navBar.html"
-    })
-
-    
-        
-
         document.querySelector(".messageImg").onmouseover = () => {
             let im =  document.querySelector(".messageImg")
 
@@ -405,4 +401,103 @@
            let im =  document.querySelector(".messageImg")
             im.src =  "/images/message_new.svg"
          }
+        }
+         // Rahul Login
+  // import loginPage from "/scripts/loginPage1.js";
+
+  // document.getElementById("login-page").innerHTML = loginPage();
+
+  // document.getElementById("loginPagebetween").addEventListener("click", function () {
+  //     document.querySelector("#mainPageModel").style.display = "flex";
+  //     document.getElementById("navContainer").style.zIndex = "0";
+  //   });
+
+  // document.querySelector(".close").addEventListener("click", function () {
+  //   document.querySelector("#mainPageModel").style.display = "none";
+  //   document.getElementById("navContainer").style.zIndex = "100";
+  // });
+
+  // document
+  //   .querySelector(".employerLogin")
+  //   .addEventListener("click", function () {
+  //     document.querySelector("#employerName").style.color = "#007bff";
+  //     document.querySelector(".employerLogin").style.border =
+  //       "2px solid #007bff";
+  //     document.querySelector(".employerLogin").style.borderLeft = "none";
+  //     document.querySelector(".employerLogin").style.borderRight = "none";
+  //     document.querySelector(".employerLogin").style.borderTop = "none";
+
+  //     document.querySelector(".studentLogin").style.border = "none";
+  //     document.querySelector("#studentName").style.color = "black";
+
+  //     document.querySelector(".forOr").style.display = "none";
+  //     document.querySelector(".forGoogle").style.display = "none";
+
+  //     document.querySelector(".mainContent").style.height = "400px";
+  //     document.querySelector(".inputModel").style.marginTop = "-16%";
+  //   });
+
+  // document
+  //   .querySelector(".studentLogin")
+  //   .addEventListener("click", function () {
+  //     document.querySelector("#studentName").style.color = "#007bff";
+  //     document.querySelector(".studentLogin").style.border =
+  //       "2px solid #007bff";
+  //     document.querySelector(".studentLogin").style.borderLeft = "none";
+  //     document.querySelector(".studentLogin").style.borderRight = "none";
+  //     document.querySelector(".studentLogin").style.borderTop = "none";
+
+  //     document.querySelector(".employerLogin").style.border = "none";
+  //     document.querySelector("#employerName").style.color = "black";
+
+  //     document.querySelector(".forOr").style.display = "flex";
+  //     document.querySelector(".forGoogle").style.display = "flex";
+
+  //     document.querySelector(".mainContent").style.height = "500px";
+  //     document.querySelector(".inputModel").style.marginTop = "6%";
+  //   });
+
+  // document
+  //   .querySelector("#buttonLogin")
+  //   .addEventListener("click", function (event) {
+  //     event.preventDefault();
+  //     let email = document.getElementById("emailLogin").value;
+
+  //     let passWord = document.getElementById("passwordLogin").value;
+  //     let emailFlag = false;
+  //     let passFlag = false;
+  //     let details = null;
+  //     usersData.map((item) => {
+  //       if (email == item.email) {
+  //         emailFlag = true;
+  //         details = item;
+  //       }
+  //       if (passWord == item.password) {
+  //         passFlag = true;
+  //         details = item;
+  //       }
+  //     });
+
+  //     if (emailFlag == false && passFlag == true) {
+  //       document.getElementById("emailMessage").style.display = "block";
+
+  //       document.getElementById(
+  //         "emailNameAlert"
+  //       ).innerHTML = `<p id="emailNameAlert"><img id="alertImg" src="/images/alert.png">Please enter a valid email address</p>`;
+  //     } else if (passFlag == false && emailFlag == true) {
+  //       document.getElementById("passMessage").style.display = "block";
+  //       document.getElementById(
+  //         "passNameAlert"
+  //       ).innerHTML = `<p id="passNameAlert"><img id="alertImg" src="/images/alert.png">Please enter a valid password</p>`;
+  //     }
+
+  //     if (emailFlag && passFlag) {
+  //       localStorage.setItem("singleUserLoginDetails", JSON.stringify(details));
+
+  //       window.location.href = "../productPage.html";
+  //     }
+  //   });
+
+
+    
 </script>

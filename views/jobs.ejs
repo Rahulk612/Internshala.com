@@ -486,7 +486,7 @@ import loginPage from "/scripts/loginPage.js";
   if(!all){
 
     document.getElementById("login-page").innerHTML = loginPage();
-  }
+  
 
   document
     .getElementById("loginPagebetween")
@@ -581,11 +581,6 @@ import loginPage from "/scripts/loginPage.js";
       }
     });
 
-
-  function theFunction(){
-    console.log("logout Clicked")
-    localStorage.removeItem("interPage");
-    window.location.href = "/internshala/logout"
   }
 
   // *****
