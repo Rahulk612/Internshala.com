@@ -206,7 +206,7 @@ function navBarRegistration(){
                 </li>
     
                 <li class="registerButton">
-                    <p style="cursor: pointer;" id="registerStudent">Login/Register<i id="register_icon" class='bx bx-caret-down arrow3'></i></p>
+                    <p style="cursor: pointer; color="black" id="registerStudent">Login/Register<i id="register_icon" class='bx bx-caret-down arrow3'></i></p>
                     <ul class="registerSubMenu subMenuSmall">
                         <li><a href="#">Register as a Student</a></li>
                         <li><a href="#">Regiter as an Employeer</a></li>

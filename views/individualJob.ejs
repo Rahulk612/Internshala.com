@@ -350,9 +350,9 @@
   import navBarRegistration from "/scripts/navBarforRegistration.js";
 
   let all = localStorage.getItem("UserDeatils");
-    console.log("indi"+all);
+    console.log(all);
 
-    if (!all) {
+    if (all=="null" || all=="" || all==null) {
     console.log("Without");
     contNav.innerHTML = navBarRegistration();
     document.querySelector(".subMenuSmall").style.height = "150px";
